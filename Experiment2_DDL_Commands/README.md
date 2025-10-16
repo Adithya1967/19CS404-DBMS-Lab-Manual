@@ -181,7 +181,7 @@ Location TEXT);
 Table attributes are CustomerID, Name, Address, Email
 
 ```sql
--- insert into Customers(CustomerID, Name, Address, Email) 
+insert into Customers(CustomerID, Name, Address, Email) 
 select CustomerID, Name, Address, Email from Old_customers;
 ```
 
@@ -201,7 +201,7 @@ ISBN             Title                      Author           Publisher   Year
 978-1122334455   Cybersecurity Essentials   Alice Smith                  2021
 
 ```sql
--- insert into Books(ISBN,Title,Author,Publisher,Year) values("978-1234567890","Introduction to AI","John Doe","",""),("978-9876543210","Deep Learning","Jane Doe","TechPress",2022),("978-1122334455","Cybersecurity Essentials","Alice Smith","",2021);
+insert into Books(ISBN,Title,Author,Publisher,Year) values("978-1234567890","Introduction to AI","John Doe","",""),("978-9876543210","Deep Learning","Jane Doe","TechPress",2022),("978-1122334455","Cybersecurity Essentials","Alice Smith","",2021);
 ```
 
 **Output:**
@@ -238,7 +238,7 @@ foreign key(OrderID) references Orders(OrderID)
 --Write a SQL query to add a new column MobileNumber of type NUMBER and a new column Address of type VARCHAR(100) to the Student_details table.
 
 ```sql
--- alter table Student_details add MobileNumber NUMBER;
+alter table Student_details add MobileNumber NUMBER;
 alter table Student_details add Address VARCHAR(100);
 ```
 
@@ -252,7 +252,7 @@ alter table Student_details add Address VARCHAR(100);
 -- Write an SQL query to add two new columns, designation and net_salary, to the table Companies. The designation column should have a data type of varchar(50), and the net_salary column should have a data type of number.
 
 ```sql
--- alter table Companies add designation varchar(50);
+ alter table Companies add designation varchar(50);
 alter table Companies add net_salary number;
 ```
 
@@ -270,7 +270,7 @@ ProjectID as INTEGER should be a foreign key referencing Projects(ProjectID).
 AssignmentDate as DATE should be NOT NULL.
 
 ```sql
--- create table ProjectAssignments(
+create table ProjectAssignments(
 AssignmentID INTEGER primary key,
 EmployeeID INTEGER,
 ProjectID INTEGER,
