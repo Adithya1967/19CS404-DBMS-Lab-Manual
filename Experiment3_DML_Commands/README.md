@@ -305,6 +305,7 @@ delete from Doctors where specialization is NULL;
 
 <img width="1168" height="898" alt="image" src="https://github.com/user-attachments/assets/06bc1d70-1aa7-4d8f-b5ac-5114c45fd109" />
 
+<img width="1891" height="1025" alt="image" src="https://github.com/user-attachments/assets/0fc214d9-1e31-4f7a-9b42-bc68a80b1c84" />
 
 ## RESULT
 Thus, the SQL queries to implement DML commands have been executed successfully.
